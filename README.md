@@ -1,50 +1,28 @@
-# Welcome to your Expo app 👋
+🚿🎵 Shower Music Controller
+   A smart device that lets you control music in the shower using physical buttons and an ESP32, connected to a mobile app via Bluetooth.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Overview
+This project combines hardware + software to create a waterproof music controller.
+   - ESP32 sends commands using Bluetooth (BLE)
+   - Mobile app receives commands and controls music
+   - Designed for use in a wet environment
 
-## Get started
+Features
+   - Button controls: skip, volume, play/pause
+   - BLE communication (sends commands like "NEXT")
+   - React Native (Expo) mobile app
+   - Waterproof enclosure design
+  
+Structure
+   shower-controller/
+   ├── arduino/    # ESP32 code
+   ├── app/        # Mobile app
 
-1. Install dependencies
+How it works
+   - Press connect bluetooth button
+   - ESP32 detects input
+   - Sends BLE command
+   - App receives it and controls music
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Status
+- Work in progress & adding more features and improving reliability.

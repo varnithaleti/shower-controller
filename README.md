@@ -21,11 +21,10 @@ This project combines hardware and software to create a reliable, waterproof mus
 4. The mobile app receives the command and adjusts the music playback.
 
 ## Structure
-\`\`\`text
 shower-controller/
 ├── arduino/       # ESP32 microcontroller code
 ├── app/           # React Native mobile app code
-\`\`\`
+
 
 ## 🚀 Status
 **Work in Progress:** Currently adding more features and improving overall system reliability.
